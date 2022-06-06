@@ -5,53 +5,68 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clone_youtube</title>
-   <link rel="stylesheet" href="./main.css">
+   <link rel="stylesheet" href="./mian.css" />
    <script src="https://kit.fontawesome.com/72c3beeba8.js" crossorigin="anonymous"></script>
   </head>
   <body>
-   <nav>
-     <div id="nav__bar">
-       <a href="javascript:void(0)">
-        <i class="fa-brands fa-youtube">Youtube</i>
-       </a>
-        <a href="javascript:void(0)">
-          <i class="fa-solid fa-magnifying-glass"></i>
-          <i class="fa-solid fa-ellipsis-vertical"></i>
-       </a>
-     </div>
-   </nav>
-   <section id="veiwer">
-     <div>
-
-     </div>
-   </section>
-   <section id="description">
-    <div class="tag"> </div>
-    <div class="title"></div>
-    <ul>
-        <li><button class="thumup"><i class="fa-solid fa-thumbs-up"></i></button></li>
-        <li><button class="thumdown"><i class="fa-solid fa-thumbs-down"></i></i></button></li>
-        <li><button class="share"><i class="fa-solid fa-share"></i></button></li>
-        <li><button class="save"><i class="fa-solid fa-plus"></i></button></li>
-        <li><button class="report"><i class="fa-solid fa-flag"></i></button></li>
-    </ul>
-    <div class="author">
-      <div class="author__logo">
-
-      </div>
-      <div class="subs">
-        <a href="javascript:void(0)">SUBSCRIBE</a>
-      </div>
+    <div class="nav__wrap">
+     <nav>
+       <div id="nav__bar">
+         <a href="javascript:void(0)" class="logo">
+          <i class="fa-brands fa-youtube"></i>
+          <p>Youtube</p>
+         </a>
+         <a href="javascript:void(0)" class="search">
+           <i class="fa-solid fa-magnifying-glass"></i>
+           <i class="fa-solid fa-ellipsis-vertical"></i>
+          </a>
+        </div>
+      </nav>
+      <section id="veiwer">
+        <div class="veiwer__container">
+          <div id="palyer">
+            <iframe width="560" height="315" 
+              src="https://www.youtube.com/embed/67stn7Pu7s4" title="YouTube video player" 
+              frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </section>
+      <section id="description">
+        <div class="tag">
+          <a href="javascript:void(0)">
+            #Dreancoding #Dreamcoder #Elie
+          </a>
+          <div class="explain_video">
+            <p>Clone coding YouTube Mobile Website | Beginner FrontEnd developer HTML, CSS, javascript</p>
+            <i class="fa-solid fa-angle-down"></i>
+          </div>
+        </div>
+        <div class="title"></div>
+        <ul class="icons">
+         <li><button class="thumup"><i class="fa-solid fa-thumbs-up"></i></button></li>
+         <li><button class="thumdown"><i class="fa-solid fa-thumbs-down"></i></i></button></li>
+         <li><button class="share"><i class="fa-solid fa-share"></i></button></li>
+         <li><button class="save"><i class="fa-solid fa-plus"></i></button></li>
+         <li><button class="report"><i class="fa-solid fa-flag"></i></button></li>
+         </ul>
+        <div class="author">
+          <div class="author__logo">image</div>
+          <div class="subs">
+           <a href="javascript:void(0)">SUBSCRIBE</a>
+          </div>
+        </div>
+        <div class="comment">
+          <div class="comment--top">
+           <p>comment <span class="count"></span></p>
+           <div class="toggle"><i class="fa-solid fa-angles-down"></i></div>
+          </div>
+          <div class="comment--bottom">
+           <div class="personlog">M</div>
+           <p> this is best video ever in mylife!!!!</p>
+          </div>
+     </section>
+     <section id="videocrips"></section>
     </div>
-    <div class="comment">
-      <span>comments count</span>
-      <div class="toggle">arrow</div>
-      <div class="personlog"></div>
-      <input type="text">  
-    </div>
-   </section>
-   <section id="videocrips">
-
-   </section>
   </body>
 </html>

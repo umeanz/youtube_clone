@@ -1,16 +1,143 @@
 body{
- margin: 0;
+  margin: 0;
+  font-size: 14px;
+  line-height: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+button{
+  background-color: #fff;
+  border: none;
+ 
 }
 
+.nav__wrap{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: aquamarine;   */
+}
+
+/* Navigation-Bar */
+nav{
+  width: 100%;
+  margin: auto; 
+}
 #nav__bar{
-
+  display: flex;
+  background-color: #333;
+  align-items: flex-start;
+  padding: 5px 10px;
+  position: relative;
+}
+#nav__bar .logo{
+  display: flex;
+  color: #fff;
+  text-decoration: none;
+}
+#nav__bar .logo i{
+  color: red;
+  margin: auto;
+}
+#nav__bar .logo p{
+  margin: 0 2px;
+}
+#nav__bar .search{
+  position: absolute;
+  top: auto;;
+  right: 10px;
+  color: #fff;
+  text-decoration: none;
 }
 
+/* /Veiwer */
 #veiwer{
-
-
+  width: 100%;
+  background-color: #fff;
+}
+#veiwer .veiwer__container{
+ 
 }
 
+/* Descripts */
 #description{
+  width: 100%;
+}
 
+#description .tag{
+  padding: 0 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* background-color: coral; */
+}
+#description .tag a{
+  text-decoration: none;
+}
+#description .tag .explain_video{
+  display: flex;
+  align-items: center;
+}
+#description .tag .explain_video i{
+  padding-left: 10px;
+  padding-right: 20px;
+}
+
+#description ul.icons {
+  display: flex;
+  flex-direction: row;
+  /* background-color: blue; */
+  list-style: none;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0;
+}
+
+#description .author{
+  display: flex;
+  padding: 5px 10px;
+}
+#description .author .author__logo{
+  display: block;
+  flex-grow: 1;
+}
+#description .author .subs a{
+  font-weight: bold;
+  color: red;
+  text-decoration: none;
+}
+
+#description .comment{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+#description .comment .comment--top{
+  display: flex;
+  padding: 0 10px;
+  align-items: center;
+}
+#description .comment .comment--top p{
+  flex-grow: 1;
+  font-weight: bold;
+}
+#description .comment .comment--top .toggle{
+  align-items: center;
+}
+
+#description .comment .comment--bottom{
+  display: flex;
+  align-items: center;
+}
+#description .comment .comment--bottom .personlog{
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 10px;
+  background-color: cadetblue;
+  text-align: center;
+  margin: 0 10px;
 }
